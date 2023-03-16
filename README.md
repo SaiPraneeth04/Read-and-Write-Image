@@ -22,61 +22,73 @@ End the program and close the output image windows.
 ### Developed By:
 ### Register Number: 
 i) #To Read,display the image
-```
-  
+```python
+  ### Developed by:  Sai Praneeth K
+  ### Register number: 212222230067
+  import cv2
+  image1= cv2.imread('lotus.jpg',1)
+  cv2.imshow('Output1',image1)
+  cv2.waitKey(0)
+  cv2.destroyAllWindows()
 
 ```
 ii) #To write the image
-```
-
-
-
+```python
+## Developed by:  Sai Praneeth K
+### Register number: 212222230067
+import cv2
+image1= cv2.imread('lotus.jpg',0)
+cv2.imshow('Output1',image1)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
 ```
 iii) #Find the shape of the Image
-```python3
-
-
-
+```python
+## Developed by:  Sai Praneeth K
+### Register number: 212222230067
+import cv2
+pic = cv2.imread('lotus.jpg',1)
+print(pic.shape)
 ```
 iv) #To access rows and columns
 
-```python3
-
-
-
+```python
+## Developed by:  Sai Praneeth K
+### Register number: 212222230067
+import random
+import cv2
+pic=cv2.imread("lotus.jpg",1)
+for i in range(100):
+    for j in range(pic.shape[1]):
+        pic[i][j]=[random.randint(0,255),random.randint(0,255),random.randint(0,255)]
+cv2.imshow("212222230067",pic)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
 ```
 v) #To cut and paste portion of image
-```python3
-
-
-
+```python
+## Developed by:  Sai Praneeth K
+### Register number: 212222230067
+import cv2
+color_img = cv2.imread('lotus.jpg',1)
+tag = color_img[20:80,20:80]
+color_img[90:150,90:150] = tag
+cv2.imshow('212222230067',color_img)
+cv2.waitKey(0)
 ```
 
 ## Output:
 
 ### i) Read and display the image
-
-<br>
-<br>
-
+![MODEL](1.png)
 ### ii)Write the image
-
-<br>
-<br>
-
+![MODEL](6.png)
 ### iii)Shape of the Image
-
-<br>
-<br>
-
+![MODEL](3.png)
 ### iv)Access rows and columns
-<br>
-<br>
-
+![MODEL](4.png)
 ### v)Cut and paste portion of image
-<br>
-<br>
-
+![MODEL](5.png)
 ## Result:
 Thus the images are read, displayed, and written successfully using the python program.
 
